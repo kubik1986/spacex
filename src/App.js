@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './components/Header/header';
+import Home from './components/Home/home';
 import Main from './components/Main/main';
 import Features from './components/Features/features';
 import Footer from './components/Footer/footer';
@@ -46,8 +47,9 @@ class App extends React.Component {
     return (
       <>
         <Header rockets={this.state.rockets} changeRocket={this.changeRocket}/>
-        <Main rocket={this.state.rocket} />
-        {this.state.rocketFeatures && <Features {...this.state.rocketFeatures} />}
+        {this.state.company && <Home company={this.state.company}/>}
+        {/* <Main rocket={this.state.rocket} />
+        {this.state.rocketFeatures && <Features {...this.state.rocketFeatures} />} */}
         {this.state.company && <Footer {...this.state.company.links}/>}
       </>
     );
