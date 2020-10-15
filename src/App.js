@@ -14,8 +14,8 @@ class App extends React.Component {
   state = {
     rockets: [],
     rocket: 'Falcon 1',
-    rocketFeatures: {},
-    company: {}
+    rocketFeatures: null,
+    company: null
   };
 
   componentDidMount() {
@@ -47,8 +47,8 @@ class App extends React.Component {
       <>
         <Header rockets={this.state.rockets} changeRocket={this.changeRocket}/>
         <Main rocket={this.state.rocket} />
-        <Features rocketFeatures={this.state.rocketFeatures} />
-        <Footer company={this.state.company}/>
+        {this.state.rocketFeatures && <Features {...this.state.rocketFeatures} />}
+        {this.state.company && <Footer {...this.state.company.links}/>}
       </>
     );
   }
