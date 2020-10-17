@@ -15,6 +15,10 @@
 	margin: 0 30px;
 }
 
+.details-content {
+	max-width: 50%;
+}
+
 .details-youtube {
 	margin: 0 auto;
 	display: block;

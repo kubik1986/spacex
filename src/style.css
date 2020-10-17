@@ -67,3 +67,14 @@ h1, h2, h3, p {
 	font-size: 12px;
 	line-height: 14px;
 }
+
+.button {
+	color: #fff;
+	min-width: 260px;
+	padding: 20px;
+	text-align: center;
+	border: 2px solid #ffffff;
+	box-sizing: border-box;
+	border-radius: 6px;
+	text-decoration: none;
+}

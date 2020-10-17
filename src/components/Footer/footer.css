@@ -33,17 +33,6 @@
 	text-decoration: none;
 }
 
-.button {
-	color: #fff;
-	min-width: 260px;
-	padding: 20px;
-	text-align: center;
-	border: 2px solid #ffffff;
-	box-sizing: border-box;
-	border-radius: 6px;
-	text-decoration: none;
-}
-
 @media (max-width: 576px) {
 
 	.footer-nav .list {
