@@ -8,15 +8,19 @@ const Video = {
   'other': 'space'
 }
 
-const Main = ({ rocket }) => (
+const Main = ({ rocket, title }) => (
   <section className="main">
-    <h1 className="title">{rocket}</h1>
-    <div className="video-container">
-      <video
-        className="video"
-        autoPlay loop muted
-        src={`video/${Video.hasOwnProperty(rocket) ? Video[rocket]: Video['other']}.mp4`} />
-    </div>
+    <h1 className="title">
+      {title || rocket}
+    </h1>
+    {rocket && (
+      <div className="video-container">
+        <video
+          className="video"
+          autoPlay loop muted
+          src={`video/${Video.hasOwnProperty(rocket) ? Video[rocket]: Video['other']}.mp4`} />
+      </div>
+    )}
   </section>
 );
 
