@@ -48,7 +48,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <BrowserRouter>
+      <BrowserRouter> 
+      {/* </BrowserRouter> basename="/spacex"> - for deploy on gh-pages*/}
         <Header rockets={this.state.rockets} changeRocket={this.changeRocket} />
 
         <Route exact path='/'
